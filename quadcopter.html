@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Quadcopter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar "><img src="images/avatar.jpg" alt="" style="width:304px;height:228px;"/></a>
+					<h1><strong>Toon Stuyck</strong> <br />
+					Engineering Student at KU Leuven <br />
+					Computer Graphics <br />
+					Image Processing</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+						<h3>Design of a quadcopter </h3>
+							
+						</header>
+						<p>This project was part of the course Computer Aided Control Systems Design given by professor Bart De Moor.
+						I had to investigate the full state feedback controller design and the integral controller design as well as
+						the LQG controller for a quadcopter.</p>
+						
+						<h4>LQR control</h4>
+						<p>I have investigated two types of controllers, the full state feedback controller and an integral controller.
+						Both use a LQR controller. The advantages of such a LQR-controller is that is has an explicit 
+						linear solution which is calculated with a low on-line computational complexity.
+						It does however also have some disadvantages. Constraints cannot be taken into account and only quadratic cost
+						functions are possible. Another drawback is that it has no predictive capacity. A trajectory with different checkpoints
+						was given, the goal was to make the quadcopter follow this trajectory as accurate as possible and look at the impact
+						of changing the payload of the quadcopter.</p>
+						
+						<div class ="row">
+						<article class="6u 12u$(xsmall) work-item">
+								<img src="images/copter/fullss.jpg" alt="" style="width:370px;height:217px;"/>
+								<p>Full state feedback controller</p>
+						</article>
+						<article class="6u$ 12u$(xsmall) work-item">
+								<img src="images/copter/intss.jpg" alt="" style="width:370px;height:217px;"/>
+								<p>Integral controller</p>
+						</article>
+						</div>
+						
+						<h4>LQG control</h4>
+						<p>The same trajectory was also tested with a LQG controller. This is a Kalman filter that estimates
+						the state-vector and is used together with the integral action.</p>
+						
+						<article class="6u 12u$(xsmall) work-item">
+								<img src="images/copter/lqg3d.jpg" alt="" style="width:370px;height:217px;"/>
+								<p>LQG controller</p>
+						</article>
+						
+						<h4>Conclusion</h4>
+						<p>We conclude that the integral controller is a much better way to control the quadcopter.
+						It is able to cope quite decently with the added payload. Whereas the full-state feedback 
+						controller produced poor results. The computational complexity of both controllers is about 
+						the same so it is preferable to use the integral controller above the full-state feedback controller.
+						The LQG controller is slower than the 2 other variants but is least sensitive to noise. <br/>
+						If you would like to learn more about this project feel free to <A HREF="mailto:toon.stuyck@student.kuleuven.be">contact me</A>
+						, and I will send you the full report.</p>
+					</section>
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/toon-stuyck/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+						<li><a href="mailto:toon.stuyck@student.kuleuven.be" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; ToonStuyck</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
