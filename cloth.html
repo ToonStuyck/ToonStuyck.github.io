@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Diabatix</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-97439242-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	
+	<body id="top">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar "><img src="images/avatar.jpg" alt="" style="width:304px;height:228px;"/></a>
+					<h1><strong>Toon Stuyck</strong> <br />
+					Engineering Student at KU Leuven <br />
+					Computer Graphics <br />
+					Image Processing</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+						<img src="images/diabatix/logo.jpg" alt="" style="width:370px;height:200px;"/><h3>Shape optimization of flow and cooling systems @ Diabatix </h3>
+							
+						</header>
+						<p>I did an internship at <a href="https://diabatix.com/#!/en/" target="_blank">Diabatix</a> for 10 weeks.
+						I had to develop a module for shape optimization of flow and cooling systems based on adjoint optimisation.
+						This module is able to modify the shape of an object in order to minimize a certain objective function.<br/>
+						The objective function, e.g. minimal pressure at the inlet, can be chosen freely by the user. Besides the freedom to 
+						choose different objective functions, the method is also able to satisfy geometric constraints.<br/> <br/>
+						
+						This module was implemented in 7 weeks as a stand-alone version. Afterwards it was modified to fit in the framework of the commercial software of Diabatix. <br/> <br/>
+						
+						<div class ="row">
+						<article class="6u 12u$(xsmall) work-item">
+								<img src="images/diabatix/week6WaveConstraint.png" alt="" style="width:370px;height:217px;"/>
+								<p>The geometric constraint</p>
+						</article>
+						<article class="6u$ 12u$(xsmall) work-item">
+								<img src="images/diabatix/week3Init.png" alt="" style="width:370px;height:217px;"/>
+								<p>The initial shape</p>
+						</article>
+						</div>
+						
+						<div class ="row">
+						<article class="6u 12u$(xsmall) work-item">
+								<img src="images/diabatix/week6Wave.png" alt="" style="width:370px;height:217px;"/>
+								<p>The final result</p>
+						</article>
+						<article class="6u$ 12u$(xsmall) work-item">
+								<img src="images/diabatix/week4Constrains2.png" alt="" style="width:370px;height:217px;"/>
+								<p>Plot that shows how the pressure at the inlet decreases with every iteration</p>
+						</article>
+						</div>
+						
+						The video shows an example when the code was mid development. The objective was to minimize the pressure at the inlet. Geometric constraints are applied on the x- and y-axis.
+						</p>
+						
+						<video width="370" height="240" controls>
+						<source src='videos/diabatix/week5Constraint.mp4' type='video/mp4' />
+						<source src='videos/diabatix/week5Constraint.ogv' type='video/ogg; codecs="theora, vorbis"' />
+							<object id="flowplayer" data="flowplayer-3.2.2.swf" type="application/x-shockwave-flash" width="370" height="240" >
+							<param name="movie" value="flowplayer-3.2.2.swf">
+							<param name="allowfullscreen" value="true">
+							<param name="flashvars" value="config={'clip':{'url':'videos/diabatix/week5Constraint.mp4','autoPlay':false}}">
+							</object> 
+						</video>
+						
+						
+					</section>
+
+
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/toon-stuyck/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon fa-bitbucket"><span class="label">Bitbucket</span></a></li>
+						<li><a href="mailto:toon.stuyck@student.kuleuven.be" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; ToonStuyck</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
