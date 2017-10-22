@@ -47,7 +47,8 @@
 						</header>
 						<p>This project is heavily based on the tutorial by 
 						<a href="https://gamedevelopment.tutsplus.com/tutorials/simulate-tearable-cloth-and-ragdolls-with-simple-verlet-integration--gamedev-519" target="_blank">Jared Counts</a>. 
-						The tutorial explains how to simulate tearable cloth and ragdolls. For this project I only implemented the tearable cloth. The first demo shows the simulation in action.<br/> <br/>
+						The tutorial explains how to simulate tearable cloth and ragdolls. For this project I only implemented the tearable cloth.<br/> <br/>
+						The first fragment shows the simulation in action.
 						
 						<video width="1000" height="560" controls>
 						<source src='videos/Curtain/Cloth1Trim.mp4' type='video/mp4' />
@@ -57,7 +58,29 @@
 							<param name="flashvars" value="config={'clip':{'url':'videos/diabatix/week5Constraint.mp4','autoPlay':false}}">
 							</object> 
 						</video>
+						<br/> <br/>
+						I also played a bit with the damping factor. Normally the damping factor should be positive to make sure that the solution returns to its steady state (remember the first fragment). If the damping 
+						is taken equal to zero, the steady state solution can never be achieved because the piece of cloth would never stop moving. Taking a negative damping factor could create an 
+						"explosive situation"! This is because now, not only will it never stop moving, the curtain will also keep accelerating. This is shown in the next fragment.
 						
+						<video width="1000" height="560" controls>
+						<source src='videos/Curtain/NegativeDampingTrim.mp4' type='video/mp4' />
+							<object id="flowplayer" data="flowplayer-3.2.2.swf" type="application/x-shockwave-flash" width="1000" height="560" >
+							<param name="movie" value="flowplayer-3.2.2.swf">
+							<param name="allowfullscreen" value="true">
+							<param name="flashvars" value="config={'clip':{'url':'videos/diabatix/week5Constraint.mp4','autoPlay':false}}">
+							</object> 
+						</video>
+						<br/> <br/>
+						The first two fragments both show a piece of cloth where the whole upper line is fixed. The final fragment mixes things up and shows what happens when the piece of cloth is only fixed at three points.
+						<video width="1000" height="560" controls>
+						<source src='videos/Curtain/3PointsTrim.mp4' type='video/mp4' />
+							<object id="flowplayer" data="flowplayer-3.2.2.swf" type="application/x-shockwave-flash" width="1000" height="560" >
+							<param name="movie" value="flowplayer-3.2.2.swf">
+							<param name="allowfullscreen" value="true">
+							<param name="flashvars" value="config={'clip':{'url':'videos/diabatix/week5Constraint.mp4','autoPlay':false}}">
+							</object> 
+						</video>
 						
 					</section>
 
